@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midi visualization</title>
+    <script src="app.js"></script>
+
+    
+        
+      
+
+
+    <body>
+
+        
+
+        <img id="image-lips1";
+     src="../final-project/images/lips yes.png";
+     alt="lips"
+     style="height: 15%; width: 15%; margin-left: 10%; margin-top: 3.5%;background-color: rgb(56, 158, 82);"
+     >
+
+     <img id="image-lips2";
+     src="../final-project/images/lips yes.png";
+     alt="lips1"
+     style="height: 15%; width: 15%; background-color: rgb(39, 68, 196);">
+
+     <img id="image-lips3";
+     src="../final-project/images/lips yes.png";
+     alt="lips2"
+     style="height: 15%; width: 15%; background-color: rgb(205, 255, 88);">
+
+     <img id="image-lips4";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(90, 53, 53);">
+
+     <img id="image-lips5";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(88, 236, 255);">
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+     <img id="image-lips6";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; margin-left: 10% ;background-color: pink;">
+
+     <img id="image-lips7";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: blueviolet;">
+
+     <img id="image-lips8";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: lightsalmon;">
+
+     <img id="image-lips9";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: greenyellow;">
+
+     <img id="image-lips10";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: blue;">
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <img id="image-lips11";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; margin-left: 10%;background-color: rgb(94, 214, 100);">
+
+     <img id="image-lips12";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(230, 167, 209);">
+
+     <img id="image-lips13";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(206, 107, 26);">
+
+     <img id="image-lips14";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(224, 189, 199);">
+
+     <img id="image-lips15";
+     src="../final-project/images/lips yes.png";
+     alt="lips3"
+     style="height: 15%; width: 15%; background-color: rgb(119, 119, 139);">
+
+     <audio id="note1";
+     scr="../final-project/audio/Save your tears.mp3">
+    </audio>
+
+     
+     
+
+     </body>
+
+    </head>
+
+    <script>
+
+
+
+        console.log(window);
+
+       
+        const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
+		'X-RapidAPI-Key': '2a9467f2eemsh0f06a0577e1b602p1b79b8jsn5da1aab23b7d'
+	}
+};
+
+fetch('https://shazam.p.rapidapi.com/search?term=Funkytown&locale=en-US&offset=0&limit=5', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+
+	
+
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
+ 
+ 
+           
+ 
+ 
+ 
+            
+
+           
+ 
+ 
+ 
+ 
+ 
+ 
+        
+ 
+            
+ 
+ 
+ 
+ 
+ 
+        
+ 
+        </script>
+ 
+ 
+<script>
+ 
+ 
+ window.alert('Interact with the screen to play sounds from launchap');
+ 
+ 
+ 
+      setInterval(
+      function () {
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#"+randomColor;
+      },1000);
+
+    
+
+      var audio = new Audio("audio/Note 1.mp3");
+        audio.play();
+        id=audio
+ 
+        var audio = new Audio("audio/Note 2.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 3.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 4.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 5.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 6.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 7.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 8.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 9.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 10.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 11.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 12.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 13.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 14 copy.mp3");
+        audio.play();
+        id=audio
+
+        var audio = new Audio("audio/Note 15.mp3");
+        audio.play();
+        id=audio
+
+       
+ 
+ 
+ 
+          </script>
+
+        
+        </html>
